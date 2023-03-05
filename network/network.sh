@@ -55,4 +55,7 @@ elif [ "$MODE" == "createChannel" ]; then
   createChannel
 elif [ "$MODE" == "down" ]; then
   networkDown
+elif [ "$MODE" == "restart" ]; then
+  networkDown
+  networkUp
 fi
