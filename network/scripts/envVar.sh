@@ -22,7 +22,7 @@ setGlobals() {
   else
     USING_ORG="${OVERRIDE_ORG}"
   fi
-  infoln "Using organization ${USING_ORG}"
+
   if [ $USING_ORG -eq 1 ]; then
     export CORE_PEER_LOCALMSPID="DeveloperMSP"
     export CORE_PEER_TLS_ROOTCERT_FILE=$PEER0_DEVELOPER_CA
