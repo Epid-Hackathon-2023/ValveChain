@@ -1,1 +1,13 @@
-/fabric/
+/bin/
+/builders/
+install-fabric.sh
+
+network/channel-artifacts
+
+# network/scripts/
+network/system-genesis-block/
+
+network/organizations/ordererOrganizations
+network/organizations/peerOrganizations
+
+network/log.txt

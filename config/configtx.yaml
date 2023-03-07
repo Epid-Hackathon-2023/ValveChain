@@ -18,7 +18,7 @@ Organizations:
     Name: OrdererOrg
     ID: OrdererMSP
     MSPDir: ../organizations/ordererOrganizations/edf_network.com/msp
-	
+
   Policies:
 		Readers:
 			Type: Signature
