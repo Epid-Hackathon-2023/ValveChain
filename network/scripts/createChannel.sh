@@ -1,7 +1,4 @@
-# Genesis
-# Create
-# Join
-# Set Anchor
+
 
 # imports
 . scripts/envVar.sh
@@ -55,6 +52,13 @@ joinChannel() {
     done
 }
 
+
+setAnchorPeer() {
+    ORG=$1
+    docker exec cli ./scripts/setAnchorPeer.sh $ORG $CHANNEL_NAME
+}
+
+
 FABRIC_CFG_PATH=${PWD}/../config
 BLOCKFILE="./channel-artifacts/${CHANNEL_NAME}.block"
 
@@ -63,3 +67,6 @@ createChannel
 
 joinChannel 1
 joinChannel 2
+
+setAnchorPeer 1
+setAnchorPeer 2
